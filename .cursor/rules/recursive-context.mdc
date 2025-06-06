@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- First, look for glob `**/.context.md`. Use terminal command `find . -name '.context.md'` from the project root, if required.
+- Second, if you are going to read and/or write any file in a directory containing `.context.md` files from the first step, read all of them and respect the instructions in them.
+- Third, if the file has top-level comments about how to understand and handle the file, respect it.
+- For example, if you are reading or writing a file at /a/b/c, you should check for `/a/.context.md`, `/a/b/.context.md` and `/a/b/c/.context.md` in the order. Then check the instruction comment at the above file.
+- While you work, if you think you can write relevant instructions in the specific directory, add or modify `.context.md` in that directory. Likewise, add or modify proper instructions as comments at files.
